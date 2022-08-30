@@ -30,16 +30,62 @@
     </header>
     <div class="container">
       <form>
-          <textarea class="form-control col-lg-12 col-sm-6" rows="3"></textarea>
-          <textarea class="form-control col-lg-12 col-sm-6" rows="3"></textarea>
-          <textarea class="form-control col-lg-12 col-sm-6" rows="3"></textarea>
-          <textarea class="form-control col-lg-12 col-sm-6" rows="3"></textarea>
-          <textarea class="form-control col-lg-12 col-sm-6" rows="3"></textarea>
-          <textarea class="form-control col-lg-12 col-sm-6" rows="3"></textarea>
+        <div class="d-flex">
+          <h5 class="timestamp">9:00 AM</h4>
+          <textarea class="form-control" rows="3"></textarea>
+          <button type="submit" id="hour-9">Save</button>
+        </div>
+        <div class="d-flex">
+          <h5 class="timestamp">10:00 AM</h4>
+          <textarea class="hour-10-text form-control" rows="3"></textarea>
+          <button id="hour-10">Save</button>
+        </div>
+        <div class="d-flex">
+          <h5 class="timestamp">11:00 AM</h4>
+          <textarea class="hour-11-text form-control" rows="3" data-time="hour-11"></textarea>
+          <button id="hour-11">Save</button>
+        </div>
+        <div class="d-flex">
+          <h5 class="timestamp">12:00 PM</h4>
+          <textarea class="hour-12-text form-control" rows="3" data-time="hour-12"></textarea>
+          <button id="hour-12">Save</button>
+        </div>
+        <div class="d-flex">
+          <h5 class="timestamp">1:00 PM</h4>
+          <textarea class="hour-1-text form-control" rows="3" data-time="hour-1"></textarea>
+          <button id="hour-1">Save</button>
+        </div>
+        <div class="d-flex">
+          <h5 class="timestamp">2:00 PM</h4>
+          <textarea class="hour-2-text form-control" rows="3" data-time="hour-2"></textarea>
+          <button id="hour-2">Save</button>
+        </div>
+        <div class="hour-3 d-flex">
+          <h5 class="timestamp">3:00 PM</h4>
+          <textarea class="hour-3-text form-control" rows="3" data-time="hour-3"></textarea>
+          <button id="hour-3">Save</button>
+        </div>
+        <div class="hour-4 d-flex">
+          <h5 class="timestamp">4:00 PM</h4>
+          <textarea class="hour-4-text form-control" rows="3" data-time="hour-4"></textarea>
+          <button id="hour-4">Save</button>
+        </div>
+        <div class="hour-5 d-flex">
+          <h5 class="timestamp">5:00 PM</h4>
+          <textarea class="hour-5-text form-control" rows="3" data-time="hour-5"></textarea>
+          <button id="hour-5">Save</button>
+        </div>
       </form>
+
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+          <div class="container text-center">
+            <small>Copyright &copy; Work Day Scheduler</small>
+          </div>
+        </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
