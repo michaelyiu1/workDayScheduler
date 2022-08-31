@@ -27,8 +27,6 @@ var hourArray = [
 
 //Set background color of textarea depending on time 
 var currentTime = moment().format('HH');
-console.log(currentTime);
-
 var timeArray = [9,10,11,12,13,14,15,16,17];
 
 for(i=0; i<timeArray.length; i++){
