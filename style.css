@@ -78,6 +78,9 @@ button{
   color: white;
 }
 
+button:hover{
+  background-color: blue;;
+}
   form h5{
     display: flex;
     text-align: center;

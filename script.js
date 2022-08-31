@@ -43,15 +43,10 @@ for(i=0; i<timeArray.length; i++){
 
 
 //Function for saving text content
-function saveInfo(hour){
+/*function saveInfo(hour){
 
-    var selectedHour = hourArray[hour];
-    var textElement = $(selectedHour).text();
-    console.log(textElement);
-    localStorage.setItem(selectedHour, textElement);
-
-    lastRenderedInfo();
-};
+    console.log(this.id);
+};*/
 
 function lastRenderedInfo(){
 
@@ -62,15 +57,97 @@ function lastRenderedInfo(){
     }
 };
 
+hour9button.on('click', function(){
 
-hour9button.on('submit', saveInfo(0));
-/*hour10button.on('submit', saveInfo(1));
-hour11button.on('click', saveInfo(2));
+    var selectedHour = hourArray[0];
+    var textElement = $(selectedHour).val();
+    console.log(textElement);
+    localStorage.setItem(selectedHour, textElement);
+
+    lastRenderedInfo();
+});
+
+hour10button.on('click', function(){
+
+    var selectedHour = hourArray[1];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+  
+    lastRenderedInfo();
+});
+
+hour11button.on('click', function(){
+
+    var selectedHour = hourArray[2];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+hour12button.on('click', function(){
+
+    var selectedHour = hourArray[3];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+hour1button.on('click', function(){
+
+    var selectedHour = hourArray[4];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+hour2button.on('click', function(){
+
+    var selectedHour = hourArray[5];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+hour3button.on('click', function(){
+
+    var selectedHour = hourArray[6];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+hour4button.on('click', function(){
+
+    var selectedHour = hourArray[7];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+hour5button.on('click', function(){
+
+    var selectedHour = hourArray[8];
+    var textElement = $(selectedHour).val();
+    localStorage.setItem(selectedHour, textElement);
+   
+    lastRenderedInfo();
+});
+
+
+/*hour11button.on('click', saveInfo(2));
 hour12button.on('click', saveInfo(3));
 hour1button.on('click', saveInfo(4));
 hour2button.on('click', saveInfo(5));
 hour3button.on('click', saveInfo(5));
 hour4button.on('click', saveInfo(6));
 hour5button.on('click', saveInfo(7));*/
+
+lastRenderedInfo();
 
 
