@@ -46,6 +46,7 @@ for(i=0; i<timeArray.length; i++){
     console.log(this.id);
 };*/
 
+//Function that gets user information from local storage of each hour
 function lastRenderedInfo(){
 
     for(i=0; i<hourArray.length; i++){
@@ -55,85 +56,85 @@ function lastRenderedInfo(){
     }
 };
 
+// Hour 9 button 
 hour9button.on('click', function(){
 
     var selectedHour = hourArray[0];
     var textElement = $(selectedHour).val();
     console.log(textElement);
     localStorage.setItem(selectedHour, textElement);
-
     lastRenderedInfo();
 });
 
+// Hour 10 button 
 hour10button.on('click', function(){
 
     var selectedHour = hourArray[1];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-  
     lastRenderedInfo();
 });
 
+// Hour 11 button 
 hour11button.on('click', function(){
 
     var selectedHour = hourArray[2];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
+// Hour 12 button 
 hour12button.on('click', function(){
 
     var selectedHour = hourArray[3];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
+// Hour 1 button 
 hour1button.on('click', function(){
 
     var selectedHour = hourArray[4];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
+// Hour 2 button 
 hour2button.on('click', function(){
 
     var selectedHour = hourArray[5];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
+// Hour 3 button 
 hour3button.on('click', function(){
 
     var selectedHour = hourArray[6];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
+// Hour 4 button 
 hour4button.on('click', function(){
 
     var selectedHour = hourArray[7];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
+// Hour 5 button 
 hour5button.on('click', function(){
 
     var selectedHour = hourArray[8];
     var textElement = $(selectedHour).val();
     localStorage.setItem(selectedHour, textElement);
-   
     lastRenderedInfo();
 });
 
