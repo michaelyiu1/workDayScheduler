@@ -1,4 +1,4 @@
-# workDayScheduler
+# Workday Scheduler
 
 
 ## Description: 
@@ -10,7 +10,6 @@ Web browser that allows users to plan each hour of their day. Users can input an
 
 
 ### Links
-
 
 Deployed Link: https://michaelyiu1.github.io/workDayScheduler/
 
