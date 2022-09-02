@@ -39,12 +39,16 @@ for(i=0; i<timeArray.length; i++){
     }
 };
 
-
 //Function for saving text content
-/*function saveInfo(hour){
-
-    console.log(this.id);
-};*/
+function saveInfo(){
+    var thisClass = this.getAttribute('id');
+    thisClass = '.' + thisClass + '-text';
+    console.log(thisClass);
+    var textElement = $(thisClass).val();
+    localStorage.setItem(thisClass, textElement);
+    lastRenderedInfo();
+    
+};
 
 //Function that gets user information from local storage of each hour
 function lastRenderedInfo(){
@@ -56,96 +60,15 @@ function lastRenderedInfo(){
     }
 };
 
-// Hour 9 button 
-hour9button.on('click', function(){
-
-    var selectedHour = hourArray[0];
-    var textElement = $(selectedHour).val();
-    console.log(textElement);
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 10 button 
-hour10button.on('click', function(){
-
-    var selectedHour = hourArray[1];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 11 button 
-hour11button.on('click', function(){
-
-    var selectedHour = hourArray[2];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 12 button 
-hour12button.on('click', function(){
-
-    var selectedHour = hourArray[3];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 1 button 
-hour1button.on('click', function(){
-
-    var selectedHour = hourArray[4];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 2 button 
-hour2button.on('click', function(){
-
-    var selectedHour = hourArray[5];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 3 button 
-hour3button.on('click', function(){
-
-    var selectedHour = hourArray[6];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 4 button 
-hour4button.on('click', function(){
-
-    var selectedHour = hourArray[7];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-// Hour 5 button 
-hour5button.on('click', function(){
-
-    var selectedHour = hourArray[8];
-    var textElement = $(selectedHour).val();
-    localStorage.setItem(selectedHour, textElement);
-    lastRenderedInfo();
-});
-
-
-/*hour11button.on('click', saveInfo(2));
-hour12button.on('click', saveInfo(3));
-hour1button.on('click', saveInfo(4));
-hour2button.on('click', saveInfo(5));
-hour3button.on('click', saveInfo(5));
-hour4button.on('click', saveInfo(6));
-hour5button.on('click', saveInfo(7));*/
+hour9button.on('click', saveInfo);
+hour10button.on('click', saveInfo);
+hour11button.on('click', saveInfo);
+hour12button.on('click', saveInfo);
+hour1button.on('click', saveInfo);
+hour2button.on('click', saveInfo);
+hour3button.on('click', saveInfo);
+hour4button.on('click', saveInfo);
+hour5button.on('click', saveInfo);
 
 lastRenderedInfo();
 
